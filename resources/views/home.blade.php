@@ -21,35 +21,36 @@
 
         <main>
             <div class="container wide-container">
-
-                <div>
-                    <ul>
-                        @foreach ($lunghe as $lunga)
-                        <li>{{$lunga["tipo"]}}</li>
-                        @endforeach
-                    </ul>
+                <div class="container">
+                    <h2>LE LUNGHE</h2>
+                    <div class="card-container">
+                        <div class="card">
+                            @foreach ($lunghe as $lunga)
+                            <img src= "{{$lunga["src"]}}" alt="{{$lunga["titolo"]}}"></li>
+                            @endforeach
+                        </div>    
+                    </div>
                 </div>
-                <div>
-                    <ul>
-                        @foreach ($corte as $corta)
-                        <li>{{$corta["tipo"]}}</li>
-                        @endforeach
-                    </ul>
+                <div class="container">
+                    <h2>LE CORTE</h2>
+                    <div class="card-container">
+                        <div class="card">
+                            @foreach ($corte as $corta)
+                            <img src= "{{$corta["src"]}}" alt="{{$corta["titolo"]}}"></li>
+                            @endforeach
+                        </div>    
+                    </div>
                 </div>
-                <div>
-                    <ul>
-                        @foreach ($cortissime as $cortissima)
-                        <li>{{$cortissima["tipo"]}}</li>
-                        @endforeach
-                    </ul>
+                <div class="container">
+                    <h2>LE CORTISSIME</h2>
+                    <div class="card-container">
+                        <div class="card">
+                            @foreach ($cortissime as $cortissima)
+                            <img src= "{{$cortissima["src"]}}" alt="{{$cortissima["titolo"]}}"></li>
+                            @endforeach
+                        </div>    
+                    </div>
                 </div>
-            </div>
-    
-
-            </div>
-
-    
-
         </main>
 
     </body>

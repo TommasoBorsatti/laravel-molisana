@@ -4,5 +4,20 @@ main{
     .wide-container{
         background-image: url("../img/fondo-pag-speciali.jpg");
         background-size: cover;
+
+        .card-container{
+            display: flex;
+            flex-wrap: wrap;
+
+            .card{
+                flex-basis: calc((100% / 3) - 10px);
+                img{
+                    width:100%;
+                }
+            }
+    
+
+        }
+
     }
 }
