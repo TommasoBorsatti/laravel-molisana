@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
         <!--/Fonts -->
 
-        <link rel="stylesheet" href="{{asset("css/app.css")}}">
+        <link rel="stylesheet" href={{asset("css/app.css")}}>
 
     </head>
 
@@ -26,7 +26,7 @@
                     <div class="card-container">
                         @foreach ($lunghe as $lunga)
                         <div class="card">
-                            <img src= "{{$lunga["src"]}}" alt="{{$lunga["titolo"]}}"></li>
+                            <img src= {{$lunga["src"]}} alt={{$lunga["titolo"]}}>
                         </div> 
                         @endforeach
                     </div>
@@ -36,7 +36,7 @@
                     <div class="card-container">
                         @foreach ($corte as $corta)
                         <div class="card">
-                            <img src= "{{$corta["src"]}}" alt="{{$corta["titolo"]}}"></li>
+                            <img src= {{$corta["src"]}} alt={{$corta["titolo"]}}>
                         </div>    
                         @endforeach
                     </div>
@@ -46,7 +46,7 @@
                     <div class="card-container">
                         @foreach ($cortissime as $cortissima)
                         <div class="card">
-                            <img src= "{{$cortissima["src"]}}" alt="{{$cortissima["titolo"]}}"></li>
+                            <img src= {{$cortissima["src"]}} alt={{$cortissima["titolo"]}}>
                         </div>   
                         @endforeach 
                     </div>

@@ -2,7 +2,7 @@
 <header>
 
     <div class="logo-box">
-        <img src="{{asset("img/marchio-sito-test.png")}}" alt="Logo de La Molisana">
+        <img src={{asset("img/marchio-sito-test.png")}} alt="Logo de La Molisana">
     </div>
     <nav class="main-nav">
         <ul>
