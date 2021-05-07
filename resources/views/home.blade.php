@@ -17,8 +17,29 @@
     <body>
         <div class="container">
             <h1>
-                CIAONE {{$test}};
+                CIAONE
             </h1>
+            <div>
+                <ul>
+                    @foreach ($lunghe as $lunga)
+                    <li>{{$lunga["tipo"]}}</li>
+                    @endforeach
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    @foreach ($corte as $corta)
+                    <li>{{$corta["tipo"]}}</li>
+                    @endforeach
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    @foreach ($cortissime as $cortissima)
+                    <li>{{$cortissima["tipo"]}}</li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
     </body>
 </html>
