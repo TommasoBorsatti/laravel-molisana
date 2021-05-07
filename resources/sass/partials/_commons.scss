@@ -1,0 +1,13 @@
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width:75%;
+    margin: auto;
+
+    &.wide-container{
+        width: 100%;
+    }
+}

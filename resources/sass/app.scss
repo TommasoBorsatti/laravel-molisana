@@ -1,4 +1,11 @@
 //
-body{
-    background-color: red;
-}
+
+@import "partials/variables";
+@import "partials/reset";
+@import "partials/commons";
+@import "partials/typo";
+@import "partials/header";
+@import "partials/main";
+
+
+

@@ -7,7 +7,8 @@
         <title>Home</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
         <!--/Fonts -->
 
         <link rel="stylesheet" href="{{asset("css/app.css")}}">
@@ -15,31 +16,41 @@
     </head>
 
     <body>
-        <div class="container">
-            <h1>
-                CIAONE
-            </h1>
-            <div>
-                <ul>
-                    @foreach ($lunghe as $lunga)
-                    <li>{{$lunga["tipo"]}}</li>
-                    @endforeach
-                </ul>
+        
+        @include('parts/header')
+
+        <main>
+            <div class="container wide-container">
+
+                <div>
+                    <ul>
+                        @foreach ($lunghe as $lunga)
+                        <li>{{$lunga["tipo"]}}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        @foreach ($corte as $corta)
+                        <li>{{$corta["tipo"]}}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        @foreach ($cortissime as $cortissima)
+                        <li>{{$cortissima["tipo"]}}</li>
+                        @endforeach
+                    </ul>
+                </div>
             </div>
-            <div>
-                <ul>
-                    @foreach ($corte as $corta)
-                    <li>{{$corta["tipo"]}}</li>
-                    @endforeach
-                </ul>
+    
+
             </div>
-            <div>
-                <ul>
-                    @foreach ($cortissime as $cortissima)
-                    <li>{{$cortissima["tipo"]}}</li>
-                    @endforeach
-                </ul>
-            </div>
-        </div>
+
+    
+
+        </main>
+
     </body>
 </html>
