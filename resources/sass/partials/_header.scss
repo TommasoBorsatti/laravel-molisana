@@ -17,10 +17,12 @@ header{
             align-items: center;
             margin: auto;
             width: 200px;
+            padding: 0;
 
             li{
                 list-style: none;
                 text-align: center;
+                margin: 2px 5px;
 
                 a{
                     font-size: $fontBig;

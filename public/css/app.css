@@ -28,10 +28,12 @@ header .main-nav ul {
   align-items: center;
   margin: auto;
   width: 200px;
+  padding: 0;
 }
 header .main-nav ul li {
   list-style: none;
   text-align: center;
+  margin: 2px 5px;
 }
 header .main-nav ul li a {
   font-size: 22px;
@@ -48,6 +50,7 @@ main .wide-container .card-container {
 }
 main .wide-container .card-container .card {
   flex-basis: calc((100% / 3) - 10px);
+  margin: 5px;
 }
 main .wide-container .card-container .card img {
   width: 100%;

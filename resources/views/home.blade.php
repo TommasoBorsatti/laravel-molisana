@@ -24,31 +24,31 @@
                 <div class="container">
                     <h2>LE LUNGHE</h2>
                     <div class="card-container">
+                        @foreach ($lunghe as $lunga)
                         <div class="card">
-                            @foreach ($lunghe as $lunga)
                             <img src= "{{$lunga["src"]}}" alt="{{$lunga["titolo"]}}"></li>
-                            @endforeach
-                        </div>    
+                        </div> 
+                        @endforeach
                     </div>
                 </div>
                 <div class="container">
                     <h2>LE CORTE</h2>
                     <div class="card-container">
+                        @foreach ($corte as $corta)
                         <div class="card">
-                            @foreach ($corte as $corta)
                             <img src= "{{$corta["src"]}}" alt="{{$corta["titolo"]}}"></li>
-                            @endforeach
                         </div>    
+                        @endforeach
                     </div>
                 </div>
                 <div class="container">
                     <h2>LE CORTISSIME</h2>
                     <div class="card-container">
+                        @foreach ($cortissime as $cortissima)
                         <div class="card">
-                            @foreach ($cortissime as $cortissima)
                             <img src= "{{$cortissima["src"]}}" alt="{{$cortissima["titolo"]}}"></li>
-                            @endforeach
-                        </div>    
+                        </div>   
+                        @endforeach 
                     </div>
                 </div>
         </main>
