@@ -27,40 +27,87 @@ header .main-nav ul {
   display: flex;
   align-items: center;
   margin: auto;
-  width: 200px;
+  width: 250px;
   padding: 0;
 }
 header .main-nav ul li {
   list-style: none;
   text-align: center;
-  margin: 2px 5px;
+  margin: 2px 8px 0px 8px;
+  padding: 10px 0;
 }
 header .main-nav ul li a {
   font-size: 22px;
   text-decoration: none;
   font-weight: bold;
   color: #000;
+  padding: 10px 3px;
 }
 header .main-nav ul li a:focus {
   outline: none;
   color: blue;
 }
 header .main-nav ul li a:hover {
-  background-color: blue;
+  background-color: #b2e5fc;
 }
 
 main .wide-container {
+  padding: 40px 0px;
   background-image: url("../img/fondo-pag-speciali.jpg");
   background-size: cover;
 }
-main .wide-container .card-container {
+main .wide-container .container h2 {
+  margin: 8px 0px 8px 0px;
+  color: #002d73;
+}
+main .wide-container .container .card-container {
   display: flex;
   flex-wrap: wrap;
 }
-main .wide-container .card-container .card {
+main .wide-container .container .card-container .card {
   flex-basis: calc((100% / 3) - 10px);
   margin: 5px;
 }
-main .wide-container .card-container .card img {
+main .wide-container .container .card-container .card img {
   width: 100%;
+}
+
+footer {
+  padding: 40px 0px 120px 0px;
+  background-image: url("../img/footer-montagne-bottom.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+footer .container {
+  display: flex;
+}
+footer .container .footer-col-left {
+  width: 34%;
+}
+footer .container .footer-col-left .footer-img {
+  width: 150px;
+}
+footer .container .footer-col-left .footer-img img {
+  width: 100%;
+}
+footer .container .footer-col-center {
+  width: 34%;
+}
+footer .container .footer-col-right {
+  width: 25%;
+}
+footer .container ul {
+  padding: 0;
+}
+footer .container ul li {
+  font-size: 12px;
+  color: #848d9b;
+  list-style: none;
+}
+footer .container a {
+  text-decoration: none;
+  color: #848d9b;
+}
+footer .container h3 {
+  color: #848d9b;
 }

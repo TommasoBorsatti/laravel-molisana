@@ -1,0 +1,54 @@
+
+footer{
+    padding: 40px 0px 120px 0px;
+    background-image: url("../img/footer-montagne-bottom.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;   
+
+
+    .container{
+        display: flex;
+
+        .footer-col-left{
+            width:34%;
+
+            .footer-img{
+                width: 150px;
+
+                img{
+                    width:100%;
+                }
+            }
+
+        }
+        .footer-col-center{
+            width:34%;
+            
+        }
+        .footer-col-right{
+            width:25%;
+            
+        }
+
+        ul{
+            padding:0;
+
+            li{
+                font-size: $fontSmall;
+                color: $primary;
+                list-style: none;
+            }
+    
+        }
+
+        a{
+            text-decoration: none;
+            color: $primary;
+        }
+
+        h3{
+            color: $primary;
+        }
+
+    }
+}
