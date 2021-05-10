@@ -22,9 +22,9 @@ Route::get('/', function () {
     $corte = [];
     $cortissime = [];
 
-    foreach($data as $pasta){
+    foreach($data as $key => $pasta){
 
-       
+        $pasta['id'] = $key;
 
         if($pasta['tipo']=="lunga"){
             $lunghe[] = $pasta;
@@ -42,7 +42,7 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
-Route::get('product/{id}]', function($id) {
+Route::get('product/{id}', function($id) {
 
     // Qui inserisco i dati dell'array associativo che sostituisce il mio database
     $data = config('pastasciutte');
@@ -52,7 +52,7 @@ Route::get('product/{id}]', function($id) {
     return view('products', [
         "prodotto" => $prodotto 
     ]);
-})->name('prodotto');
+})->where('', '[0-9]+')->name('prodotto');
 
 Route::get('/news', function () {
 

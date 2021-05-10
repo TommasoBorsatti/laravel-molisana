@@ -147,6 +147,22 @@ footer .container h3 {
   }
 }
 
-.title-box {
+main {
+  background-color: #B8DAE4;
+  padding: 20px 0;
+}
+main .title-box {
   text-align: center;
+}
+main .title-box h1 {
+  color: #002d73;
+}
+main .product-hero img {
+  width: 100%;
+}
+main .product-detail img {
+  width: 100%;
+}
+main .text-box p {
+  color: #002d73;
 }

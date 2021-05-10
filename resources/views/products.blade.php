@@ -8,17 +8,17 @@
 @section('content')
 <main>
     <div class="title-box">
-        <h1>I PRODOTTI - TEST</h1>
+        <h1>{{$prodotto['titolo']}}</h1>
     </div>
     <div class="product-hero">
-        <img src="" alt="">
+        <img src={{$prodotto['src-h']}}>
     </div>
     <div class="product-detail">
-        <img src="" alt="">
+        <img src={{$prodotto['src-p']}} alt={{$prodotto['titolo']}}>
     </div>
     <div class="container">
         <div class="text-box">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima est nulla animi eius similique obcaecati quasi quas amet aliquam, mollitia eaque maxime quis et, veniam voluptatibus, earum unde repellendus. Cupiditate.</p>
+            <p>{{$prodotto['descrizione']}}</p>
         </div>
     </div>
 </main>
