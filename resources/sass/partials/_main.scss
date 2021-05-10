@@ -23,9 +23,23 @@ main{
                     img{
                         width:100%;
                     }
+
+                    @media screen and (max-width: 999px) {
+                        flex-basis: calc((100% / 2) - 10px);
+                    }
+
+                    @media screen and (max-width: 715px) {
+                        flex-basis: calc((100%));
+                    }
+        
                 }
             }
-                
+            
+        }
+
+        @media screen and (max-width: 999px) {
+            background-size: contain;
+            background-repeat: repeat;
         }
 
     }

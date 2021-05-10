@@ -40,7 +40,23 @@ header{
                     &:hover{
                         background-color: $third;
                     }
+
                 }
+
+                @media screen and (max-width: 750px) {
+                    display: none;
+                }
+
+                &.burger-menu{
+                    display: none;
+
+                    @media screen and (max-width: 750px) {
+                        display: inline-block;
+                        flex-basis:100%;
+                    }
+    
+                }
+
             }
         }
     }

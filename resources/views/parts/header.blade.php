@@ -6,9 +6,11 @@
     </div>
     <nav class="main-nav">
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Prodotti</a></li>
-            <li><a href="">News</a></li>
+            <li class="desk-menu"><a href="">Home</a></li>
+            <li class="desk-menu"><a href="">Prodotti</a></li>
+            <li class="desk-menu"><a href="">News</a></li>
+            <!-- Burger Menu per Risoluzione non DeskTop -->
+            <li class="burger-menu" ><a href=""><i class="fas fa-bars"></i></a></li>
         </ul>
 
     </nav>

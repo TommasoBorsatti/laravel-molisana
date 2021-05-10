@@ -50,6 +50,20 @@ header .main-nav ul li a:focus {
 header .main-nav ul li a:hover {
   background-color: #b2e5fc;
 }
+@media screen and (max-width: 750px) {
+  header .main-nav ul li {
+    display: none;
+  }
+}
+header .main-nav ul li.burger-menu {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  header .main-nav ul li.burger-menu {
+    display: inline-block;
+    flex-basis: 100%;
+  }
+}
 
 main .wide-container {
   padding: 40px 0px;
@@ -71,6 +85,22 @@ main .wide-container .container .card-container .card {
 main .wide-container .container .card-container .card img {
   width: 100%;
 }
+@media screen and (max-width: 999px) {
+  main .wide-container .container .card-container .card {
+    flex-basis: calc((100% / 2) - 10px);
+  }
+}
+@media screen and (max-width: 715px) {
+  main .wide-container .container .card-container .card {
+    flex-basis: calc((100%));
+  }
+}
+@media screen and (max-width: 999px) {
+  main .wide-container {
+    background-size: contain;
+    background-repeat: repeat;
+  }
+}
 
 footer {
   padding: 40px 0px 120px 0px;
@@ -82,7 +112,7 @@ footer .container {
   display: flex;
 }
 footer .container .footer-col-left {
-  width: 34%;
+  flex-basis: 34%;
 }
 footer .container .footer-col-left .footer-img {
   width: 150px;
@@ -91,10 +121,10 @@ footer .container .footer-col-left .footer-img img {
   width: 100%;
 }
 footer .container .footer-col-center {
-  width: 34%;
+  flex-basis: 34%;
 }
 footer .container .footer-col-right {
-  width: 25%;
+  flex-basis: 25%;
 }
 footer .container ul {
   padding: 0;
@@ -110,4 +140,9 @@ footer .container a {
 }
 footer .container h3 {
   color: #848d9b;
+}
+@media screen and (max-width: 999px) {
+  footer .container {
+    display: block;
+  }
 }
