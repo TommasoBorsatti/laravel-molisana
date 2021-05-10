@@ -14,12 +14,21 @@
         <img src={{$prodotto['src-h']}}>
     </div>
     <div class="product-detail">
-        <img src={{$prodotto['src-p']}} alt={{$prodotto['titolo']}}>
+        <img src={{$prodotto['src-p']}} alt={{$prodotto['titolo']}}>       
     </div>
     <div class="container">
         <div class="text-box">
-            <p>{{$prodotto['descrizione']}}</p>
+            <p>{!!$prodotto['descrizione']!!}</p>
         </div>
     </div>
+
+    <!--sidescroll button-->   
+    <div class="left scroll">
+        <a href={{route("prodotto", ['id'=> 6]) }}><i class="fas fa-chevron-left"></i></a>
+    </div>
+    <div class="right scroll">
+        <a href={{route("prodotto", ['id'=> 3]) }}><i class="fas fa-chevron-right"></i></a>
+    </div>
+
 </main>
 @endsection

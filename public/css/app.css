@@ -150,6 +150,7 @@ footer .container h3 {
 main {
   background-color: #B8DAE4;
   padding: 20px 0;
+  position: relative;
 }
 main .title-box {
   text-align: center;
@@ -165,4 +166,46 @@ main .product-detail img {
 }
 main .text-box p {
   color: #002d73;
+}
+main .scroll {
+  position: absolute;
+  top: 50%;
+  font-size: 60px;
+  margin: 0 15px;
+}
+main .scroll.left {
+  left: 0;
+}
+main .scroll.left a {
+  color: #fff;
+}
+main .scroll.left a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.3;
+  border-radius: 10px;
+}
+main .scroll.right {
+  right: 0;
+}
+main .scroll.right a {
+  color: #fff;
+}
+main .scroll.right a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.3;
+  border-radius: 10px;
 }

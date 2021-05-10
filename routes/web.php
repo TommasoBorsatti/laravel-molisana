@@ -47,12 +47,16 @@ Route::get('product/{id}', function($id) {
     // Qui inserisco i dati dell'array associativo che sostituisce il mio database
     $data = config('pastasciutte');
 
+    if ($id >= count($data)){
+        abort(404);
+    }
+
     $prodotto = $data[$id];
 
     return view('products', [
         "prodotto" => $prodotto 
     ]);
-})->where('', '[0-9]+')->name('prodotto');
+})->where('id', '[0-9]+' )->name('prodotto');
 
 Route::get('/news', function () {
 

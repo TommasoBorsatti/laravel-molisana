@@ -2,6 +2,7 @@
 main{
     background-color: $fifth;
     padding: 20px 0;
+    position: relative;
     
     .title-box{
         text-align: center;
@@ -35,4 +36,55 @@ main{
             color: $fourth;
         }
     }
+
+    .scroll{
+        position: absolute;
+        top: 50%;
+        font-size: 60px;
+        margin: 0 15px;
+        
+
+        &.left{
+            left:0;
+
+            a{
+                color: $sixth;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    width:100%;
+                    background-color: $sixth;
+                    opacity: 0.3;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        &.right{
+            right:0;
+
+            a{
+                color: $sixth;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    width:100%;
+                    background-color: $sixth;
+                    opacity: 0.3;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+   
+
 }
