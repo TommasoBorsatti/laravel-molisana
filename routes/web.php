@@ -54,7 +54,9 @@ Route::get('product/{id}', function($id) {
     $prodotto = $data[$id];
 
     return view('products', [
-        "prodotto" => $prodotto 
+        'prodotto' => $prodotto, 
+        'idProdotto' => $id,
+        'maxIndex' => count($data) - 1,
     ]);
 })->where('id', '[0-9]+' )->name('prodotto');
 

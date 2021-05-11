@@ -23,11 +23,15 @@
     </div>
 
     <!--sidescroll button-->   
+    @if ($idProdotto > 0)
     <div class="left scroll">
-        <a href={{route("prodotto", ['id'=> 6]) }}><i class="fas fa-chevron-left"></i></a>
+        <a href={{route("prodotto", ['id'=> $idProdotto -1]) }}><i class="fas fa-chevron-left"></i></a>
     </div>
+    @endif
     <div class="right scroll">
-        <a href={{route("prodotto", ['id'=> 3]) }}><i class="fas fa-chevron-right"></i></a>
+        @if ($idProdotto < $maxIndex)
+        <a href={{route("prodotto", ['id'=> $idProdotto +1]) }}><i class="fas fa-chevron-right"></i></a>
+        @endif
     </div>
 
 </main>
